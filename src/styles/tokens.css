@@ -1,0 +1,14 @@
+/* Placeholder for Design System Tokens */
+:root {
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-primary: #0055ff;
+
+  /* Typography */
+  --font-family-base: system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+
+  /* Spacing */
+  --space-unit: 8px;
+}
