@@ -1,0 +1,16 @@
+:root {
+  --hero-bg: #e6e6e6;
+  --hero-title-color: #252525;
+  --hero-subtitle-color: #363636;
+  --cube-outline-color: #2323ff;
+  --cube-outline-color-inverse: #fff224;
+  --cube-outline-color-white: #fff224;
+  --section-blue: #2323ff;
+  --section-yellow: #fff224;
+  --section-paper: #f4f2ed;
+  --section-ink: #252525;
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Outfit", sans-serif;
+  --font-size-base: 16px;
+  --space-unit: 8px;
+}
