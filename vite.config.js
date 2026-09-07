@@ -8,6 +8,7 @@ export default defineConfig({
         about: 'about.html',
         contact: 'contact.html',
         'case-studies/design-systems': 'case-studies/design-systems.html',
+        'case-studies/raintree-pdlc': 'case-studies/raintree-pdlc.html',
         'case-studies/e15-reporting': 'case-studies/e15-reporting.html',
         'case-studies/sourcescrub-navigation': 'case-studies/sourcescrub-navigation.html',
         'case-studies/cb-insights-reporting': 'case-studies/cb-insights-reporting.html',
