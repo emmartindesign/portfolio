@@ -74,8 +74,8 @@ if (sections.length && tocLinks.length) {
 		const cubeColor = activeSection ? getComputedStyle(activeSection).getPropertyValue('--cube-section-color').trim() : '';
 		if (cubeColor) document.documentElement.style.setProperty('--cube-current-color', cubeColor);
 		if (cubeWrap) {
-			cubeWrap.classList.remove(...Object.values(cubeSectionClasses), 'undefined');
 			const cubeSectionClass = cubeSectionClasses[sectionId];
+			cubeWrap.classList.remove(...Object.values(cubeSectionClasses), 'undefined');
 			if (cubeSectionClass) cubeWrap.classList.add(cubeSectionClass);
 		}
 	};

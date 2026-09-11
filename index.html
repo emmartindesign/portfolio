@@ -14,8 +14,13 @@
   <div class="cube-wrap" aria-hidden="true">
     <div class="cube">
       <div class="side top"></div><div class="side bottom"></div>
-      <div class="side front"></div><div class="side back"></div>
+      <div class="side front">
+        <div class="robot-eye robot-eye-l"></div>
+        <div class="robot-eye robot-eye-r"></div>
+        <div class="robot-mouth"></div>
+      </div><div class="side back"></div>
       <div class="side left"></div><div class="side right"></div>
+      <div class="robot-antenna"><div class="robot-antenna-ball"></div></div>
     </div>
     <div class="pyramid">
       <div class="base"></div>
@@ -23,6 +28,101 @@
       <div class="side two"></div>
       <div class="side three"></div>
       <div class="side four"></div>
+    </div>
+    <div class="laptop">
+      <div class="laptop-base">
+        <div class="laptop-face lf-top">
+          <div class="laptop-keyboard">
+            <span class="laptop-key-line"></span>
+            <span class="laptop-key-line"></span>
+            <span class="laptop-key-line"></span>
+          </div>
+          <div class="laptop-trackpad"></div>
+        </div>
+        <div class="laptop-face lf-bottom"></div>
+        <div class="laptop-face lf-front"></div>
+        <div class="laptop-face lf-back"></div>
+        <div class="laptop-face lf-left"></div>
+        <div class="laptop-face lf-right"></div>
+      </div>
+      <div class="laptop-lid">
+        <div class="laptop-screen-frame">
+          <div class="laptop-screen-inner"></div>
+          <div class="laptop-notch"></div>
+        </div>
+      </div>
+    </div>
+    <div class="compass">
+      <div class="compass-casing">
+        <div class="compass-ring compass-ring-top"></div>
+        <div class="compass-ring compass-ring-bottom"></div>
+        <div class="compass-pillar cp-n"></div>
+        <div class="compass-pillar cp-s"></div>
+        <div class="compass-pillar cp-e"></div>
+        <div class="compass-pillar cp-w"></div>
+        <div class="compass-dial">
+          <div class="compass-dial-outer"></div>
+          <div class="compass-dial-inner"></div>
+          <div class="compass-crosshair-v"></div>
+          <div class="compass-crosshair-h"></div>
+          <div class="compass-mark cm-n"></div>
+          <div class="compass-mark cm-s"></div>
+          <div class="compass-mark cm-e"></div>
+          <div class="compass-mark cm-w"></div>
+          <div class="compass-tick-diag ct-ne"></div>
+          <div class="compass-tick-diag ct-se"></div>
+          <div class="compass-tick-diag ct-sw"></div>
+          <div class="compass-tick-diag ct-nw"></div>
+        </div>
+      </div>
+      <div class="compass-needle-assembly">
+        <div class="compass-needle">
+          <svg class="compass-needle-svg" viewBox="-60 -180 120 360" aria-hidden="true">
+            <polygon class="cn-poly" points="0,0 -16,-20 0,-155" />
+            <polygon class="cn-poly" points="0,0 16,-20 0,-155" />
+            <polygon class="cn-poly cn-south" points="0,0 -14,20 0,140" />
+            <polygon class="cn-poly cn-south" points="0,0 14,20 0,140" />
+            <line class="cn-spine" x1="0" y1="-155" x2="0" y2="140" />
+            <polyline class="cn-chevron" points="-14,-135 0,-162 14,-135" />
+            <circle class="cn-hub-outer" cx="0" cy="0" r="16" />
+            <circle class="cn-hub-inner" cx="0" cy="0" r="6" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="data-chart">
+      <div class="chart-plane">
+        <div class="chart-grid-line cgl-x1"></div>
+        <div class="chart-grid-line cgl-x2"></div>
+        <div class="chart-grid-line cgl-z1"></div>
+        <div class="chart-grid-line cgl-z2"></div>
+        <div class="chart-axis-tick cat-x1"></div>
+        <div class="chart-axis-tick cat-x2"></div>
+        <div class="chart-axis-tick cat-x3"></div>
+        <div class="chart-axis-tick cat-z1"></div>
+        <div class="chart-axis-tick cat-z2"></div>
+        <div class="chart-axis-tick cat-z3"></div>
+      </div>
+      <div class="chart-y-axis">
+        <div class="chart-y-line"></div>
+        <div class="chart-y-tick cyt-1"></div>
+        <div class="chart-y-tick cyt-2"></div>
+        <div class="chart-y-tick cyt-3"></div>
+      </div>
+      <div class="chart-columns">
+        <!-- Row 1: Back (Z = -spacing) -->
+        <div class="chart-col col-r1-c1"><div class="col-face col-f"></div><div class="col-face col-b"></div><div class="col-face col-l"></div><div class="col-face col-r"></div><div class="col-face col-t"></div></div>
+        <div class="chart-col col-r1-c2"><div class="col-face col-f"></div><div class="col-face col-b"></div><div class="col-face col-l"></div><div class="col-face col-r"></div><div class="col-face col-t"></div></div>
+        <div class="chart-col col-r1-c3"><div class="col-face col-f"></div><div class="col-face col-b"></div><div class="col-face col-l"></div><div class="col-face col-r"></div><div class="col-face col-t"></div></div>
+        <!-- Row 2: Middle (Z = 0) -->
+        <div class="chart-col col-r2-c1"><div class="col-face col-f"></div><div class="col-face col-b"></div><div class="col-face col-l"></div><div class="col-face col-r"></div><div class="col-face col-t"></div></div>
+        <div class="chart-col col-r2-c2"><div class="col-face col-f"></div><div class="col-face col-b"></div><div class="col-face col-l"></div><div class="col-face col-r"></div><div class="col-face col-t"></div></div>
+        <div class="chart-col col-r2-c3"><div class="col-face col-f"></div><div class="col-face col-b"></div><div class="col-face col-l"></div><div class="col-face col-r"></div><div class="col-face col-t"></div></div>
+        <!-- Row 3: Front (Z = +spacing) -->
+        <div class="chart-col col-r3-c1"><div class="col-face col-f"></div><div class="col-face col-b"></div><div class="col-face col-l"></div><div class="col-face col-r"></div><div class="col-face col-t"></div></div>
+        <div class="chart-col col-r3-c2"><div class="col-face col-f"></div><div class="col-face col-b"></div><div class="col-face col-l"></div><div class="col-face col-r"></div><div class="col-face col-t"></div></div>
+        <div class="chart-col col-r3-c3"><div class="col-face col-f"></div><div class="col-face col-b"></div><div class="col-face col-l"></div><div class="col-face col-r"></div><div class="col-face col-t"></div></div>
+      </div>
     </div>
   </div>
 
