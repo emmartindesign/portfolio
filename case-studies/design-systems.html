@@ -6,15 +6,195 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <meta name="description" content="Creating scalable, usable, trusted design components">
+  <meta name="description" content="Creating scalable, usable, trusted design components and tokens by Eric Michael Martin">
   <title>Angular design system | Eric Michael Martin</title>
 </head>
 <body class="case-study-page">
   <main class="case-study-main">
-    <div class="case-study-hero"><a class="case-study-back case-study-back-top" href="../">&larr; Back</a><h1 class="display">Angular design system</h1><h2>Creating scalable, usable, trusted design components.</h2></div>
-    <div class="case-study-body"><dl class="case-study-meta"><div><dt>Roles</dt><dd>Design system architect</dd></div><div><dt>Tools</dt><dd>Figma, Storybook, Angular, HTML, CSS</dd></div><div><dt>Team</dt><dd>All designers, all front-end developers</dd></div><div><dt>Timeline</dt><dd>Ongoing</dd></div></dl><article><h3>Overview</h3><p>Sourcescrub sought a visual upgrade from its previous product experience. This work established scalable, usable, trusted design components and tokens for the product team.</p><h4>Goal</h4><p>Create a shared foundation that gives designers and developers a reliable source of truth while keeping complex interfaces easy to build and maintain.</p><h4>Approach</h4><p>The system moved the team away from one-off decisions toward reusable components, documented patterns, and a shared vocabulary for product work.</p><h4>Design and tokens</h4><p>Components were designed in Figma and informed by Angular Material. Tokens were organized across primitive values, system styles for spacing and type, and component-specific combinations that could be overridden when needed.</p><h4>Storybook</h4><p>Storybook became the working reference for the library. Stories documented component behavior, variants, and links to relevant design guidance so the whole team could contribute to the system.</p><blockquote class="case-study-quote">A design system is only useful when the whole team can find, understand, and trust it.</blockquote></article></div>
-    <a class="case-study-back" href="../">&larr; Back to the portfolio</a>
+    <div class="case-study-hero">
+      <a class="case-study-back case-study-back-top" href="../">&larr; Back</a>
+      <h1 class="display">Angular design system</h1>
+      <h2>Creating scalable, usable, trusted design components and tokens.</h2>
+    </div>
+
+    <!-- Top Section: 2 columns (Roles/Meta on Left, Stacked Overview & Goal on Right) -->
+    <div class="case-study-body">
+      <dl class="case-study-meta">
+        <div><dt>Roles</dt><dd>Lead Product Designer, UX Engineer</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Storybook, Angular, HTML, CSS</dd></div>
+        <div><dt>Team</dt><dd>All designers, all front-end developers</dd></div>
+        <div><dt>Timeline</dt><dd>Ongoing</dd></div>
+      </dl>
+
+      <article>
+        <h3>Overview</h3>
+        <p>Sourcescrub sought a visual upgrade from their Angular Material 14 components&mdash;wanting to achieve a more desirable app with more consistency across designs and development.</p>
+
+        <h4>Goal</h4>
+        <p>The primary objective was to create a library of components in Figma and in Storybook for ease of use by designers and developers.</p>
+      </article>
+    </div>
+
+    <!-- Full-Width Subsequent Sections -->
+    <div class="case-study-full-width">
+      <!-- ─── Section 1: Approach ────────────────────────────────────────── -->
+      <section class="case-study-section-header">
+        <h3>Approach</h3>
+        <p>Sourcescrub&rsquo;s previous designer had begun to prepare a design library which followed an Atomic design structure (Atoms, Molecules, Organisms, Templates), and after discussion with the Product team leaders, I determined that it was best to continue that structure. This would allow us to communicate the differences between interactions and styles, as well as the perceived roles between micro interactions, such as buttons, and the larger interactions present in templates.</p>
+      </section>
+
+      <hr>
+
+      <!-- ─── Section 2: Design ──────────────────────────────────────────── -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>Design</h3>
+          <p>In Figma, I began by creating a page for each type of Figma component or style. This simple structure would allow designers and developers who understand Atomic design a starting place for manually discovering components.</p>
+          <p>Each individual type of style or component gets its own section with documentation briefly describing what it is and how it&rsquo;s used. Components which have flexible content have &ldquo;swappers&rdquo; or slots, depending on if the contents require a fixed style or not.</p>
+          <p>While building each component, I referred to the Angular Material documentation to understand the various available inputs and outputs, and reflected those in Figma whenever possible.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/design system/orh0f3J2ODk24hx7.png" alt="Figma component documentation for selects and chips swapper" width="1736" height="1441">
+          <p class="media-caption">Our section on selects (styled ng-select or mat-button/mat-menu components). To aid designers, a &ldquo;swapper&rdquo; component is created for chips, allowing designers to easily mockup multi-select components.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ─── Section 3: Component Showcase (4-Column Gallery) ───────────── -->
+      <section class="grid-gallery-4col">
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/design system/vbQhUmPev7R9ocY7.png" alt="Button components with variants, sizes, and states" width="1152" height="1296">
+          <p>Buttons &ndash; Variants, sizes, and states</p>
+        </div>
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/design system/1ZbqFfvu7066klZ5.png" alt="Chip and tag components with selection and remove states" width="1984" height="1782">
+          <p>Chips &ndash; Selection, filtering, and remove states</p>
+        </div>
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/design system/Uri1AYOyg6i1zPdU.png" alt="Form input fields with labels, prefixes, and validation states" width="1235" height="1590">
+          <p>Form inputs &ndash; Labels, prefixes, and validation</p>
+        </div>
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/design system/auOOtCR6vqKJ6bqj.png" alt="Dropdown menu components with nested actions" width="1550" height="2488">
+          <p>Menus &ndash; Dropdown options and nested actions</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ─── Section 4: Developer Specs & Interactive Prototypes ────────── -->
+      <section class="case-study-grid grid-reversed">
+        <div class="grid-col-text">
+          <h3>Developer specifications</h3>
+          <p>I also label properties for developers, so that they understand if a component property is for Figma only, content projection, or a component input value.</p>
+          <p>This clear mapping bridges the gap between design component properties and Angular input/output decorators, drastically reducing ambiguity during sprint handoffs.</p>
+        </div>
+        <div class="grid-col-media" style="align-items: center;">
+          <img loading="lazy" src="../assets/case-studies/images/design system/ffBSN1hXUMy1Il9Q.png" alt="Figma component properties with type labels" width="238" height="365" style="max-width: 280px;">
+          <p class="media-caption">Figma component properties with type labels for engineering handoff.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>Interactive prototypes</h3>
+          <p>Complex components, with full prototypes can be easily assembled from the design library components, like this prototype of a filter panel.</p>
+          <p>Because base molecules are already linked with realistic interaction states, assembling high-fidelity flows requires minimal overhead and guarantees production accuracy.</p>
+        </div>
+        <div class="grid-col-media" style="align-items: center;">
+          <img loading="lazy" src="../assets/case-studies/images/design system/WxDF22UJtVTPGOAa.gif" alt="A filter panel prototype built in Figma" width="286" height="550" style="max-width: 320px;">
+          <p class="media-caption">A filter panel prototype built in Figma using library components.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ─── Section 5: Molecules Overview (Full-Bleed Media) ───────────── -->
+      <section class="grid-media-full">
+        <img loading="lazy" src="../assets/case-studies/images/design system/QTxGNspY6FoxYGQd.png" alt="The Molecules available for designers in Figma" width="15992" height="1982">
+        <p class="media-caption">The &ldquo;Molecules&rdquo; available for designers.</p>
+      </section>
+
+      <hr>
+
+      <!-- ─── Section 6: Tokens ──────────────────────────────────────────── -->
+      <section class="case-study-grid grid-reversed">
+        <div class="grid-col-text">
+          <h3>Tokens</h3>
+          <p>It was also important for designers to have control over the styles used in the components, and so I worked with the Director of our Client Engineering teams to devise a way to convert SVG files into Sass and CSS variables, which can be directly added to component library override properties.</p>
+          <p>These tokens loosely follow <a href="https://m3.material.io/foundations/design-tokens/overview" target="_blank" rel="noopener noreferrer">Material 3 token conventions</a>:</p>
+          <ul>
+            <li><strong>Reference tokens</strong> for base color palettes and other small values (similar in use to CSS variables)</li>
+            <li><strong>System tokens</strong> for styles, spacing, sizing, and role-based color assignments (similar in use to CSS properties)</li>
+            <li><strong>Component tokens</strong> for combinations of system tokens, specific to a single component (similar in use to CSS classes)</li>
+          </ul>
+          <p>Design tokens are created and managed in Figma&rsquo;s Variables settings, using a plugin to convert to a useable JSON file.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/design system/nnmiLkYYvAe1dkt9.png" alt="Design tokens created and managed in Figma Variables settings" width="640" height="595">
+          <p class="media-caption">Design tokens created and managed in Figma&rsquo;s Variables settings, exported to JSON.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ─── Section 7: Storybook & Chromatic ───────────────────────────── -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>Storybook</h3>
+          <p>After the initial version of the design library was complete, we created a Storybook instance so that we could host the components on <a href="https://www.chromatic.com/" target="_blank" rel="noopener noreferrer">Chromatic</a>.</p>
+          <p>I and our entire front-end developer team created stories for every style and component in every state that we wanted to maintain and test. Chromatic allows us to capture UI changes with each code update, preventing errors&mdash;so long as a &ldquo;story&rdquo; exists for it.</p>
+          <p>At the start, most of the stories were simply restyled Angular Material components, but since the initial launch, I&rsquo;ve added more and more custom Angular components, which better meet the team&rsquo;s needs visually, and are more flexible and stable.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/design system/4SAa7nLAgLG31xvO.png" alt="Sourcescrub Storybook component library hosted on Chromatic" width="1903" height="839">
+          <p class="media-caption">Sourcescrub&rsquo;s Storybook library hosted on Chromatic.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="case-study-grid grid-reversed">
+        <div class="grid-col-text">
+          <h3>Figma to Chromatic handoff</h3>
+          <p>Once components are added to Storybook the link to Chromatic can be copied into the documentation of a component, which is immediately available to developers when they&rsquo;re examining a project.</p>
+          <p>For complex components, these links can be added to individual variants to reduce confusion.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/design system/ocdjjWu3DekbWZOl.png" alt="Chromatic link embedded in Figma component documentation" width="1404" height="643">
+          <p class="media-caption">An example of a Chromatic link added to a button component.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ─── Section 8: Impact Quote ────────────────────────────────────── -->
+      <blockquote class="case-study-quote">
+        &ldquo;Since launch, all components in Sourcescrub&rsquo;s designs are 100% traceable to a Design system component or a set of components.&rdquo;
+      </blockquote>
+
+      <hr>
+
+      <!-- ─── Section 9: Learnings & Next Steps ──────────────────────────── -->
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Learnings</h4>
+          <p>Actual full implementation of the design system is an ongoing process. Legacy code takes time to update and it takes time to train developers on the UI-kit in Storybook and to break the habit of rebuilding things from scratch.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Next steps</h4>
+          <p>As new code replaces old, it&rsquo;s vital for designers to ensure that developers are using the UI-kit for new code, and that designers ensure that they themselves are using the design library.</p>
+        </div>
+      </section>
+
+      <!-- Bottom Navigation / Back Button -->
+      <a class="case-study-back" href="../">&larr; Back to the portfolio</a>
+    </div>
   </main>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
+
