@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="case-study-page-root">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Building an AI-native design system and exoskeleton for an EMR product development lifecycle by Eric Michael Martin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>AI-Native Design System | Eric Michael Martin</title>
+</head>
+<body class="case-study-page">
+  <main class="case-study-main">
+    <div class="case-study-hero">
+      <a class="case-study-back case-study-back-top" href="../">&larr; Back</a>
+      <h1 class="display">AI-native design system</h1>
+      <h2>Building a design system for an AI-native Product Development Life Cycle (PDLC) in the EMR space.</h2>
+    </div>
+
+    <!-- Top Section: 2 columns (Roles/Meta on Left, Stacked Overview on Right) -->
+    <div class="case-study-body">
+      <dl class="case-study-meta">
+        <div><dt>Roles</dt><dd>Design System Architect, AI Workflow Strategist</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Storybook, Model Context Protocol (MCP), YAML, Semantic Tokens</dd></div>
+        <div><dt>Team</dt><dd>A leading EMR Software Provider product and engineering teams</dd></div>
+        <div><dt>Timeline</dt><dd>Ongoing</dd></div>
+      </dl>
+
+      <article>
+        <h3>Overview</h3>
+        <p>Building a design system for an AI-native Product Development Life Cycle (PDLC) in the EMR space required changing the design system from a well-documented UI-Kit into a prototyping partner.</p>
+        <p>I built an intelligent exoskeleton designed to eliminate the manual friction of doc-hunting and boilerplate translation. By automating system compliance, we ensure our human experts spend their time where it matters most: cognitive ergonomics and clinical safety.</p>
+      </article>
+    </div>
+
+    <!-- Full-Width Subsequent Sections -->
+    <div class="case-study-full-width">
+      <!-- ─── Architecture Overview ──────────────────────────────────────── -->
+      <section class="case-study-section-header">
+        <h3>Four Technical Layers</h3>
+        <p>I restructured the design system across four distinct technical layers, moving away from static UI kit and toward a dynamic, machine-interpretable stack. This architecture explicitly separates the source of truth from the tooling that humans interact with.</p>
+      </section>
+
+      <!-- ─── The Four Layers Cards ──────────────────────────────────────── -->
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Contracts</h4>
+          <p>This is the foundational database of the design system. It contains no visual assets, only machine-readable logic. A YAML contract for each component was created to represent a source of truth for code, Figma, and any other representation across the suite of products.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Semantic Tokens</h4>
+          <p>Design tokens were converted from a headless, contextless system to semantic naming, to aid LLMs in selecting the right one for every situation.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Selection via MCP</h4>
+          <p>Based on Storybook&rsquo;s native MCP, I created a number of additional tools to help LLMs convert design intent from prompts into the correct selection for components and tokens. When Storybook builds, a new manifest of component contracts and semantic token naming conventions is built too&mdash;keeping the MCP tools updated.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Prototyping</h4>
+          <p>Additional MCP tools provide context to LLMs serving as advanced prototypes, covering basic design rules, preferred layout scaffolding, industry-specific language usage, and more. I have plans to build in user-research to flag incongruent design choices as part of an advanced linting process. Design Systems adherence can merge with general design best-practices.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ─── The Impact on the PDLC ─────────────────────────────────────── -->
+      <section class="case-study-section-header">
+        <h3>The Impact on the PDLC</h3>
+        <p>The integration of these tools fundamentally altered our delivery velocity and structural integrity by keeping the AI focused on compliance and humans focused on judgment.</p>
+      </section>
+
+      <!-- ─── Impact Cards ───────────────────────────────────────────────── -->
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Intent-driven surfacing</h4>
+          <p>Designers and developers no longer have to guess at the component which has the features they want, and AI no longer tries to build it from scratch. This reduces design drift and increases consistency.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Safe agentic prototyping</h4>
+          <p>Product managers, developers, and designers can now use internal agentic tools to rapidly spin up functional, interactive prototypes of new clinical workflows. Because the agents have the right tools and context, these prototypes are instantly compliant with our accessibility and safety standards.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Reclaiming cognitive space</h4>
+          <p>The design system is no longer an additional burden for designers and developers to dread. It&rsquo;s an active, product building partner.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Design system adherence</h4>
+          <p>The earliest version of these tools cranked adherence from 30% to 91%, capturing all but the most complex use-cases. Measurements will be even higher with the new generation of tools.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- ─── Concluding Summary ─────────────────────────────────────────── -->
+      <section class="case-study-section-header">
+        <h3>Human Judgment over Rote Mechanics</h3>
+        <p>By automating the rote mechanics of design systems&mdash;matching tokens, checking color contrast, and writing boilerplate&mdash;we&rsquo;ve given our product teams their time back. A designer no longer spends 40 minutes verifying if a specific button state complies with our internal accessibility standards. They spend that 40 minutes interviewing our users to ensure the workflow actually makes sense in a high-stress hospital environment.</p>
+      </section>
+
+      <!-- Bottom Navigation / Back Button -->
+      <a class="case-study-back" href="../">&larr; Back to the portfolio</a>
+    </div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

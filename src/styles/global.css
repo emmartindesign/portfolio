@@ -2961,8 +2961,7 @@ a {
   max-width: 500px;
 }
 
-.contact-form label,
-.case-study-gate-form label {
+.contact-form label {
   display: grid;
   gap: 6px;
   font-size: 12px;
@@ -2972,8 +2971,7 @@ a {
 }
 
 .contact-form input,
-.contact-form textarea,
-.case-study-gate-form input {
+.contact-form textarea {
   width: 100%;
   border: 0;
   border-bottom: 2px solid var(--section-ink);
@@ -2990,8 +2988,7 @@ a {
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus,
-.case-study-gate-form input:focus {
+.contact-form textarea:focus {
   border-color: var(--section-blue);
 }
 
@@ -3006,8 +3003,7 @@ a {
   text-transform: uppercase;
 }
 
-.form-status,
-.case-study-gate-status {
+.form-status {
   min-height: 24px;
   font-size: 14px;
 }
@@ -3017,75 +3013,6 @@ a {
   background: var(--section-paper);
   color: var(--section-ink);
   overflow-x: hidden;
-}
-
-.case-study-page[data-protected='true'] .case-study-main {
-  visibility: hidden;
-}
-
-.case-study-page[data-protected='true'].case-study-unlocked .case-study-main {
-  visibility: visible;
-}
-
-.case-study-gate {
-  position: fixed;
-  z-index: 30;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  padding: 24px;
-  background: var(--section-paper);
-  color: var(--section-ink);
-}
-
-.case-study-gate-panel {
-  width: min(100%, 560px);
-}
-
-.case-study-gate-panel .case-study-back {
-  margin: 0 0 70px;
-}
-
-.case-study-gate-panel h1 {
-  margin: 20px 0 34px;
-  font-size: clamp(64px, 10vw, 120px);
-  line-height: 0.82;
-  text-transform: uppercase;
-}
-
-.case-study-gate-form {
-  display: grid;
-  gap: 18px;
-  max-width: 400px;
-}
-
-.case-study-gate-form label {
-  display: grid;
-  gap: 6px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.case-study-gate-form input {
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid var(--section-ink);
-  border-radius: 0;
-  padding: 9px 0;
-  color: inherit;
-  background: transparent;
-  outline: 0;
-}
-
-.case-study-gate-form input:focus {
-  border-color: var(--section-blue);
-}
-
-.case-study-gate-status {
-  min-height: 24px;
-  font-size: 14px;
 }
 
 .case-study-page .site-header {
