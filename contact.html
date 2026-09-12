@@ -17,7 +17,15 @@
   <main>
     <section class="contact-section" style="min-height: 100vh;" aria-labelledby="contact-page-title">
       <div class="section-content"><span class="eyebrow">Start a conversation</span><h1 id="contact-page-title" class="display">Let’s make it useful.</h1><p>Tell me what you’re building, where it feels stuck, and what better could look like.</p></div>
-      <form class="contact-form" data-contact-form><label for="name">Name<input id="name" name="name" type="text" required></label><label for="email">Email<input id="email" name="email" type="email" required></label><label for="message">What are you working on?<textarea id="message" name="message" required></textarea></label><button class="submit-button" type="submit">Send inquiry &rarr;</button><p class="form-status" role="status" aria-live="polite"></p></form>
+      <form class="contact-form" action="https://formspree.io/f/xoeqzodb" method="POST" data-contact-form>
+        <input type="hidden" name="_subject" value="Query from portfolio">
+        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+        <label for="name">Name<input id="name" name="name" type="text" required></label>
+        <label for="email">Email<input id="email" name="email" type="email" required></label>
+        <label for="message">What are you working on?<textarea id="message" name="message" required></textarea></label>
+        <button class="submit-button" type="submit">Send inquiry &rarr;</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
 

@@ -1,16 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="case-study-page-root">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <meta name="description" content="Shifting our focus from how our data is set up, to how our users interact with it">
+  <meta name="description" content="Creating navigation that highlights core use-cases at Sourcescrub">
   <title>Workflow Based Navigation | Eric Michael Martin</title>
 </head>
 <body class="case-study-page">
-  <main class="case-study-main"><div class="case-study-hero"><a class="case-study-back case-study-back-top" href="../">&larr; Back</a><h1 class="display">Workflow-based navigation</h1><h2>Creating navigation that highlights core use-cases.</h2></div><div class="case-study-body"><dl class="case-study-meta"><div><dt>Roles</dt><dd>Lead product designer, UX engineer</dd></div><div><dt>Tools</dt><dd>Figma, Storybook, Angular, HTML, CSS</dd></div><div><dt>Team</dt><dd>1 product designer/UX engineer, 2 developers</dd></div><div><dt>Timeline</dt><dd>Design Nov 2023 - Apr 2024; development and implementation through Aug 2024</dd></div></dl><article><h3>Overview</h3><p>Sourcescrub customers were analysts seeking difficult-to-obtain private-company data. The product exposed complex searches and many possible workflows, making key paths difficult to discover and remember.</p><h4>Goal</h4><p>Understand which workflows mattered most and make them the primary entry points in the main navigation, improving the customer experience and reducing training demands.</p><h4>User research</h4><p>Usage data from Pendo and Datadog was combined with input from Customer Success and revenue teams to identify the workflows that were most important, least discoverable, or most expensive to train.</p><h4>UI design and implementation</h4><p>Competitor patterns were reviewed before choosing a rail-and-drawer approach inspired by Material 3. The design focused on large workflow categories, expandable drawers, and an intentional hover delay. Working Angular components and Storybook documentation gave developers a usable foundation.</p><h4>Release and response</h4><p>The new navigation launched in phases with hand-picked vanguard customers. Feedback was strongly positive, and no customers asked to return to the legacy UI after receiving access to the new experience.</p><blockquote class="case-study-quote">“The new UI is the EASIEST version of any deal origination software I've used so far.”</blockquote></article></div><a class="case-study-back" href="../">&larr; Back to the portfolio</a></main>
+  <main class="case-study-main">
+    <div class="case-study-hero">
+      <a class="case-study-back case-study-back-top" href="../">&larr; Back</a>
+      <h1 class="display">Workflow-based navigation</h1>
+      <h2>Creating navigation that highlights core use-cases.</h2>
+    </div>
+
+    <!-- Top Section: 2 columns (Roles/Meta on Left, Stacked Overview & Goal on Right) -->
+    <div class="case-study-body">
+      <dl class="case-study-meta">
+        <div><dt>Roles</dt><dd>Lead product designer, UX engineer</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Storybook, Angular, HTML, CSS</dd></div>
+        <div><dt>Team</dt><dd>1 product designer/UX engineer, 2 developers</dd></div>
+        <div><dt>Timeline</dt><dd><strong>Design:</strong> Nov 2023 &ndash; Apr 2024<br><strong>Development:</strong> Apr &ndash; Jun 2024 (4 weeks)<br><strong>Implementation:</strong> Jul &ndash; Aug 2024 (4 weeks)</dd></div>
+      </dl>
+
+      <article>
+        <h3>Overview</h3>
+        <p>Sourcescrub's customers are primarily analysts seeking difficult-to-obtain data on private companies for their investment banks and private equity firms. Sourcescrub provided access to complex database searches. These searches had many different possible workflows and data views which were difficult to discover and remember. Customer service teams spent large portions of their week training and retraining customers on these workflows.</p>
+
+        <h4>Goal</h4>
+        <p>We wanted to understand which workflows were most important to customers and make those the primary entry points in our main navigation. This would improve the customer experience and reduce the amount of training required by our teams.</p>
+      </article>
+    </div>
+
+    <!-- Full-Width Subsequent Sections (Spanning the full 1366px container across both columns) -->
+    <div class="case-study-full-width">
+      <!-- 1. UI Exploration Carousel (Screen designs in mockup) -->
+      <section class="case-study-carousel case-study-carousel--feature" aria-label="Early navigation concepts and exploratory designs" data-interval="5000">
+        <div class="carousel-viewport">
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/navigation/QyYqQ1oiAoAPpEem.png" alt="Exploratory navigation screen design 1">
+            <p class="carousel-slide-caption">Exploratory concept &ndash; Clean rail structure</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/navigation/ZZwj1lKbQKQ0emVA.png" alt="Exploratory navigation screen design 2">
+            <p class="carousel-slide-caption">Exploratory concept &ndash; Extended workflow drawers</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/navigation/0CDYGOpW2lDTzOUp.png" alt="Exploratory navigation screen design 3">
+            <p class="carousel-slide-caption">Exploratory concept &ndash; Search integration</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/navigation/hzVWc8RR5UkrYxMY.png" alt="Exploratory navigation screen design 4">
+            <p class="carousel-slide-caption">Exploratory concept &ndash; Icon hierarchy and spacing</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/navigation/Pf0Qe3okAvWXymWX.png" alt="Exploratory navigation screen design 5">
+            <p class="carousel-slide-caption">Exploratory concept &ndash; Contextual active states</p>
+          </div>
+        </div>
+        <div class="carousel-dots" role="tablist" aria-label="Exploration slides"></div>
+      </section>
+
+      <!-- 2. Section 1: User Research -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>User research</h3>
+          <p>The first step was to understand how our users were most likely to interact with the app. We used a combination of what we already knew about usage from Pendo and Datadog, and combined it with which workflows required the most training or were least discoverable, based on input from our Customer Success team.</p>
+          <p>Then, we worked with our revenue teams to create a final list of workflow categories and specific workflows within each.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/navigation/d0BlCVQlFFRz2iS8.png" alt="Legacy page layout with original navigation" width="1920" height="839">
+          <p class="media-caption">Our legacy page layout with the original navigation. Not much space for expansion.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 3. Section 2: UI Design -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>UI design</h3>
+          <p>Once we understood how the navigation should be grouped, we needed to find the best way to show all of the options.</p>
+          <p>I reviewed common patterns for navigation used by our competitors. Most used nested menus across the top, or in sidebars. Competitors were often organizing data like we did&mdash;in terms of the data structure, rather than user outcomes.</p>
+          <p>I expanded my search to other patterns, and found that Material 3 had rail-and-drawer conventions that focused on larger, simple categories represented by icons, and drawers with more options for specific workflows or information types. This fit our use-case perfectly, and was achievable by our front-end developers.</p>
+        </div>
+        <div class="grid-col-media" style="align-items: center;">
+          <img loading="lazy" src="../assets/case-studies/images/navigation/YavO6d57uwfY3D0t.png" alt="Vertical navigation rail structure inspired by Material 3" width="96" height="422" style="max-width: 140px;">
+          <p class="media-caption">The streamlined vertical navigation rail prototype.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 4. Row of 4 Navigation Design Principles Cards -->
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Maximized space</h4>
+          <p>By moving navigation to the side, we could reduce the height of sticky headers and controls needed for workflows, giving more space for data.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Perfect for desktop</h4>
+          <p>Our users are primarily on desktop, and this approach feels intuitive in that setting. The icon/category approach will also be easy to translate to mobile in the future.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Intuitive design</h4>
+          <p>While the exact implementation isn't as common as other sidebars, Sidebar navigation is a convention almost as old as the internet itself.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Easily expandable</h4>
+          <p>We can fairly easily add a few more large categories, and we can add a lot of workflows in the drawer. Not that we should, of course. Too many choices gets cluttered.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 5. Section 3: Implementation -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>Implementation</h3>
+          <p>The designs were completed, and documentation was written to demonstrate the intent of the interaction. I also created working Angular components in our UI-kit and Storybook to give them a solid foundation for refinement.</p>
+          <p>A detail I am particularly proud of is the animation delay on the drawer. A user must linger on an icon in the rail for a few milliseconds before the drawer opens. This keeps unintentional mouseovers from triggering the drawer.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/design system/CtpSOP4gmTPL4gqW.png" alt="Interactive navigation and drawer specifications in design system" width="2074" height="1679">
+          <p class="media-caption">Interaction specifications, hover delays, and drawer documentation for engineering.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 6. Full-Width Media: Interactive Navigation GIF -->
+      <section class="grid-media-full">
+        <img loading="lazy" src="../assets/case-studies/images/navigation/BjJk6oJSjcK9IRgn.gif" alt="Full platform view with new navigation rail and drawer in action" width="1906" height="780">
+        <p class="media-caption">The redesigned workflow-based navigation active across the entire Sourcescrub platform.</p>
+      </section>
+
+      <hr>
+
+      <!-- 7. Section 4: Header Responsiveness Side-by-Side -->
+      <section class="case-study-grid grid-reversed">
+        <div class="grid-col-text">
+          <h3>Dynamic Header Controls</h3>
+          <p>It was also important to me to update the overall page layout so that a user always has access to the main page controls. To this end, I created a header that reacts to the user's position in the page.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/navigation/I2XS4PwYsdsmDDia.gif" alt="Sticky responsive header in action on scroll" width="1906" height="780">
+          <p class="media-caption">Context-aware header reacting smoothly as users scroll through dense financial tables.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 8. Release and Aftermath (Text & 3-Column Timeline Comparison) -->
+      <div style="margin: 0 0 28px;">
+        <h3>Release and aftermath</h3>
+        <p>We created an aggressive timeline for a phased release in collaboration with our Account managers and Customer success teams. They hand-picked vanguard customers for the first phase. We got immensely good feedback from this change and so proceeded with two more phases&mdash;each larger than the previous.</p>
+        <p>We anticipated a slight dip in NPS score, or increase in negative feedback, as large changes often have that sort of reaction, but the opposite occurred. We saw an increase in positive feedback, and NPS remained steadily high.</p>
+        <p>However, a small poll conducted through Pendo immediately after release showed respondents were a bit polarized on their opinions.</p>
+        <p style="margin-top: 24px; font-weight: 500;">The app has changed a lot over the past two years. (Below, left to right: May 2022, Feb 2023, August 2024)</p>
+      </div>
+
+      <section class="grid-gallery-3col">
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/design system/lBLoBrcCn85wCnmB.png" alt="Sourcescrub platform layout in May 2022" width="1859" height="860">
+          <p><strong>May 2022:</strong> Legacy tabbed interface with heavy vertical overhead.</p>
+        </div>
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/navigation/BXOO0oMLFyPRZ7Rp.png" alt="Sourcescrub platform layout in February 2023" width="1920" height="839">
+          <p><strong>Feb 2023:</strong> Interim cleanup with early consolidated filtering.</p>
+        </div>
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/design system/LW5Gqg5gxm59EgSq.png" alt="Sourcescrub platform layout in August 2024" width="1920" height="780">
+          <p><strong>August 2024:</strong> Modern workflow rail with maximized data real estate.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 9. Post-Launch Learnings & Next Steps (Row of 3 Cards) -->
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h3>Overall customer response</h3>
+          <p><em>Zero customers</em> asked for the legacy UI to be turned back on for them after getting access to the new UI. Every customer directly surveyed said it was much easier to find what they were looking for.</p>
+        </div>
+        <div class="grid-card">
+          <h3>Learnings</h3>
+          <p>Change can be hard, but the care taken in building the navigation to match customer behaviors made the launch a great success. Implementation of this layout did pose some interesting challenges, as we had to preserve the old layout to some degree. We used Split.io to manage that behavior, but a lot of fundamentals had to be rewritten to support the shift in layout.</p>
+        </div>
+        <div class="grid-card">
+          <h3>Next steps</h3>
+          <p>While a clickable navigation is a great start, we also want users to have the opportunity to navigate the app using more free-form inputs, so the input in the top nav bar needs to be updated to support workflow behaviors. Additionally, we want to update the navigation to have a cleaner, more contemporary style once other style changes are completed in-app.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 10. Customer Feedback Testimonials Carousel -->
+      <section class="case-study-carousel" aria-label="Customer feedback quotes" data-interval="6000">
+        <div class="carousel-viewport">
+          <div class="carousel-slide">
+            <blockquote class="carousel-quote-text">&ldquo;New UI is the EASIEST version of any deal origination/similar software i've used so far. I had no trouble finding the pages I wanted to locate, and search improvements are great. You guys are going in the right direction for making the platform easy.&rdquo;</blockquote>
+            <p class="carousel-quote-author">&mdash; Respondent from our second rollout group</p>
+          </div>
+          <div class="carousel-slide">
+            <blockquote class="carousel-quote-text">&ldquo;The new navigation is very intuitive, UI is great. Update was massively helpful.&rdquo;</blockquote>
+            <p class="carousel-quote-author">&mdash; Respondent from beta testers</p>
+          </div>
+          <div class="carousel-slide">
+            <blockquote class="carousel-quote-text">&ldquo;I really like the structure of the navigation. If I'm prospecting, I know I can go into this section. It's easy to navigate and more user-friendly. We have a new hire starting and I think he could understand things on day 1.&rdquo;</blockquote>
+            <p class="carousel-quote-author">&mdash; Respondent from first release group</p>
+          </div>
+        </div>
+        <div class="carousel-dots" role="tablist" aria-label="Quote slides"></div>
+      </section>
+
+      <hr>
+    </div>
+
+    <a class="case-study-back" href="../">&larr; Back to the portfolio</a>
+  </main>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

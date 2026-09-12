@@ -14,7 +14,9 @@ export default defineConfig({
         'case-studies/sourcescrub-navigation': 'case-studies/sourcescrub-navigation.html',
         'case-studies/cb-insights-reporting': 'case-studies/cb-insights-reporting.html',
         'case-studies/raintree-scheduler': 'case-studies/raintree-scheduler.html',
-        'case-studies/branding': 'case-studies/branding.html'
+        'case-studies/branding': 'case-studies/branding.html',
+        'case-studies/product-design': 'case-studies/product-design.html',
+        'case-studies/training-mentorship': 'case-studies/training-mentorship.html'
       }
     }
   }
