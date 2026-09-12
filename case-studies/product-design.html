@@ -3,41 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bento-style data profile: A responsive, data-rich layout by Eric Michael Martin.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <meta name="description" content="Designing dependable product experiences with prototypes and user research">
-  <title>Product Design | Eric Michael Martin</title>
+  <title>Bento-Style Data Profile | Product Design | Eric Michael Martin</title>
 </head>
 <body class="case-study-page">
   <main class="case-study-main">
     <div class="case-study-hero">
       <a class="case-study-back case-study-back-top" href="../">&larr; Back</a>
-      <h1 class="display">Product design</h1>
-      <h2>Designing dependable digital experiences for complex workflows.</h2>
+      <h1 class="display">Bento-style data profile</h1>
+      <h2>A responsive, data-rich layout.</h2>
     </div>
+
+    <!-- Top Section: 2 columns (Roles/Meta on Left, Stacked Overview & Goal on Right) -->
     <div class="case-study-body">
       <dl class="case-study-meta">
-        <div><dt>Roles</dt><dd>Principal Product Designer, UX Engineer</dd></div>
-        <div><dt>Tools</dt><dd>Figma, HTML/CSS, TypeScript, UserTesting</dd></div>
-        <div><dt>Team</dt><dd>Cross-functional product &amp; engineering teams</dd></div>
-        <div><dt>Timeline</dt><dd>Selected projects (2020 &ndash; Present)</dd></div>
+        <div><dt>Roles</dt><dd>Lead UI designer, UX engineer</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Angular, HTML, CSS, Storybook</dd></div>
+        <div><dt>Team</dt><dd>1 UX designer, 1 developer</dd></div>
+        <div><dt>Timeline</dt><dd>Nov 2024 &ndash; Dec 2024 (8 weeks)</dd></div>
       </dl>
+
       <article>
         <h3>Overview</h3>
-        <p>A successful product is far more than dashboards and tables. When product-market fit exists, users rely on dependable data presented through streamlined, predictable interactions.</p>
+        <p>Sourcescrub is a private-company deal-sourcing app which serves private equity firms and banks. I was responsible for the overall ideation and design&mdash;including responsiveness and building components for the new layout in Figma and in Code.</p>
+        <p>As of Nov 27, 2024, this project has not been launched, but is approved and awaiting development.</p>
+
         <h4>Goal</h4>
-        <p>Deliver intuitive digital products that remove friction from complex domain tasks, turning cumbersome business operations into repeatable, confidence-building workflows.</p>
-        <h4>Research &amp; Discovery</h4>
-        <p>By conducting contextual user interviews, analyzing quantitative session metrics, and mapping journey touchpoints, customer pain points are translated directly into high-impact product priorities.</p>
-        <h4>Interactive Prototyping</h4>
-        <p>Rather than relying solely on static Figma mocks, high-fidelity prototypes and code mockups are used to validate ergonomics, micro-interactions, and real data density with users before engineering investment.</p>
-        <h4>Execution &amp; Measurement</h4>
-        <p>Working side-by-side with developers, products are built to strict design system specifications, with success measured by task completion rates, decreased support tickets, and sustained adoption.</p>
-        <blockquote class="case-study-quote">Great products anticipate user intent and get out of the way.</blockquote>
+        <p>Sourcescrub's primary workflow involves users searching for companies and reviewing available data in company profiles. Often, hundreds of company profiles are reviewed. Being able to quickly absorb as much information as possible is paramount, and the original page layout was not delivering.</p>
+        <p>The goal was to overhaul the original layout&mdash;make it responsive for core screen sizes, and place all of the most pertinent information "above the fold."</p>
       </article>
     </div>
-    <a class="case-study-back" href="../">&larr; Back to the portfolio</a>
+
+    <!-- Full-Width Subsequent Sections -->
+    <div class="case-study-full-width">
+      <!-- 1. Hero / Overview Layout Feature Media -->
+      <section class="grid-media-full">
+        <img loading="lazy" src="../assets/case-studies/images/bento-layout/xpPOYWOEWBeaV1QQ.png" alt="Bento-style data profile overview layout" width="1366" height="621">
+        <p class="media-caption">The redesigned bento-style company data profile layout.</p>
+      </section>
+
+      <hr>
+
+      <!-- 2. Section 1: Data Collection -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>Data collection</h3>
+          <p>The primary goal of the reorganization of data was to review all the currently available data and identify with customers what the most pertinent data points are when they're doing quick reviews of a company.</p>
+          <ul>
+            <li>Which stats are vital to know?</li>
+            <li>What workflows need to have clear signals (has the company been tagged, synced to a CRM, etc.)?</li>
+            <li>On longer data points, like descriptions, how much of it is important to show?</li>
+            <li>Which actions are vital to have at one's fingertips?</li>
+            <li>What formatting is required for data to be most effective?</li>
+          </ul>
+          <p class="media-caption">Current legacy layout shown to the right.</p>
+        </div>
+        <div class="grid-col-media">
+          <div class="media-preview-scrollable">
+            <img loading="lazy" src="../assets/case-studies/images/bento-layout/0YMCIJzuXFfOQbEx.png" alt="Sourcescrub original company profile layout">
+          </div>
+          <p class="media-caption">Original desktop layout before the bento overhaul (scroll to explore).</p>
+        </div>
+      </section>
+
+      <!-- 3. Key Discovery Quote & Core Information Needs -->
+      <blockquote class="case-study-quote">We discovered that our users wanted to see as much as possible in a glance&mdash;stats written in clear language, an overview of the business model, and more. They didn't want to scroll at all for the top-level info... and there's a lot of top-level info.</blockquote>
+
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Business model</h4>
+          <p>Users want to know what a business is about&mdash;its industry, customers, and description.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Their financial profile</h4>
+          <p>Users want to know if a company is doing well financially and which firms have already invested.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Their previous interactions</h4>
+          <p>Users want to know if they've looked at this company in the past, or if someone in their firm has, and if so, what they decided at that time.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Who to contact</h4>
+          <p>If a company is a good match, users want to reach out to the top contact ASAP.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 4. Section 2: Design & Mobile Exploration -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>Design</h3>
+          <p>We needed to increase the responsiveness of the layout and provide more definition between subsections of data. There are plans to implement a mobile version of the profile, and many customers are on large screens. The bento style of dashboard seemed to be the best option for achieving all of the responsiveness goals.</p>
+        </div>
+        <div class="grid-col-media" style="max-width: 380px; justify-self: center;">
+          <div class="media-preview-scrollable media-preview-scrollable--phone">
+            <img loading="lazy" src="../assets/case-studies/images/bento-layout/fFeIsHCqNE6f0nJA.png" alt="Mobile layout exploration for the bento profile">
+          </div>
+          <p class="media-caption">Mobile layout exploration for the bento profile (scroll to explore).</p>
+        </div>
+      </section>
+
+      <!-- 5. Breakpoints & Responsive Reordering -->
+      <section class="case-study-grid grid-reversed">
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/bento-layout/pYgxuYfC20XgMrB9.webp" alt="Responsive page layout reordering across 1366, 1920, and 2560 breakpoints" width="1920" height="934">
+          <p class="media-caption">Breakpoints and layout reordering across 1366px, 1920px, and 2560px screen sizes.</p>
+        </div>
+        <div class="grid-col-text">
+          <h4>Responsive for all users</h4>
+          <p>To ensure all users get the best functionality, the page reorders at different breakpoints: 1366, 1920, and 2560.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 6. Section 3: Components -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>Components</h3>
+          <p>With the design approved, the next step was to create Angular components the team could use to build the experience. The primary component was a bento-style tile.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/bento-layout/Z1EegTLTfTHqfnHX.png" alt="Storybook component story for the Bento tile" width="1621" height="933">
+          <p class="media-caption">The story for the Bento tile in Storybook.</p>
+        </div>
+      </section>
+
+      <!-- 7. Future Impact Quote -->
+      <blockquote class="case-study-quote">This change is slated to release in the next couple of months, but the design choices made here will shape the Sourcescrub app across the board.</blockquote>
+
+      <!-- 8. Interactive Figma Documentation Embed -->
+      <section class="grid-media-full">
+        <div class="figma-embed-wrap">
+          <iframe height="560" loading="lazy" allowfullscreen src="https://embed.figma.com/design/HqSI4yuYdQi5m7aNR4EdVt/Sourcescrub%E2%80%94Modular-company-profile?node-id=3744-60973&amp;embed-host=share" width="100%"></iframe>
+        </div>
+        <p class="media-caption">Get a sense for my working style by exploring the Figma file structure and documentation.</p>
+      </section>
+
+      <!-- Bottom Navigation / Back Button -->
+      <a class="case-study-back" href="../">&larr; Back to the portfolio</a>
+    </div>
   </main>
   <script type="module" src="/src/main.js"></script>
 </body>
