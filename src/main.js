@@ -21,20 +21,24 @@ if (isProtectedCaseStudy) {
 			return;
 		}
 		document.body.classList.add('case-study-unlocked');
-		document.querySelector('[data-protected-content]').innerHTML = `<div class="case-study-hero"><a class="case-study-back case-study-back-top" href="${baseUrl}">&larr; Back</a><h1 class="display">Raintree AI PDLC</h1><h2>Speeding up the product design lifecycle with generative AI and design-system context.</h2></div><div class="case-study-body"><dl class="case-study-meta"><div><dt>Roles</dt><dd>Product design, AI workflow strategy</dd></div><div><dt>Tools</dt><dd>Figma, design-system libraries, generative AI tools</dd></div><div><dt>Team</dt><dd>Raintree product and engineering team</dd></div><div><dt>Timeline</dt><dd>Placeholder timeline</dd></div></dl><article><h3>Overview</h3><p>Product design processes are quickly adopting generative AI tools for every step in the process. This work explored how design systems can provide the necessary context for generated user interfaces.</p><h4>Goal</h4><p>Streamline Raintree’s PDLC process so teams can move faster while keeping product outputs consistent and useful.</p><h4>Section title 1</h4><p>Placeholder text</p><h4>Section title 2</h4><p>Placeholder text</p><h4>Section title 3</h4><p>Placeholder text</p><blockquote class="case-study-quote">Quote Placeholder</blockquote></article></div><a class="case-study-back" href="${baseUrl}">&larr; Back to the portfolio</a>`;
+		document.querySelector('[data-protected-content]').innerHTML = `<div class="case-study-hero"><a class="case-study-back case-study-back-top" href="${baseUrl}">&larr; Back</a><h1 class="display">A Leading EMR Software Provider AI PDLC</h1><h2>Speeding up the product design lifecycle with generative AI and design-system context.</h2></div><div class="case-study-body"><dl class="case-study-meta"><div><dt>Roles</dt><dd>Product design, AI workflow strategy</dd></div><div><dt>Tools</dt><dd>Figma, design-system libraries, generative AI tools</dd></div><div><dt>Team</dt><dd>A leading EMR Software Provider product and engineering team</dd></div><div><dt>Timeline</dt><dd>Placeholder timeline</dd></div></dl><article><h3>Overview</h3><p>Product design processes are quickly adopting generative AI tools for every step in the process. This work explored how design systems can provide the necessary context for generated user interfaces.</p><h4>Goal</h4><p>Streamline a leading EMR Software Provider’s PDLC process so teams can move faster while keeping product outputs consistent and useful.</p><h4>Section title 1</h4><p>Placeholder text</p><h4>Section title 2</h4><p>Placeholder text</p><h4>Section title 3</h4><p>Placeholder text</p><blockquote class="case-study-quote">Quote Placeholder</blockquote></article></div><a class="case-study-back" href="${baseUrl}">&larr; Back to the portfolio</a>`;
 		gate.remove();
 	});
 }
 
 const siteHeader = document.querySelector('.site-header');
+const siteSocial = document.querySelector('.site-social');
 
-if (siteHeader) {
+if (siteHeader || siteSocial) {
 	let isStuck = false;
 	const updateHeaderState = () => {
 		const nextState = window.scrollY > 24;
 		if (nextState === isStuck) return;
 		isStuck = nextState;
-		const update = () => siteHeader.classList.toggle('is-stuck', isStuck);
+		const update = () => {
+			if (siteHeader) siteHeader.classList.toggle('is-stuck', isStuck);
+			if (siteSocial) siteSocial.classList.toggle('is-stuck', isStuck);
+		};
 		if (document.startViewTransition) document.startViewTransition(update);
 		else update();
 	};
@@ -70,6 +74,10 @@ if (sections.length && tocLinks.length) {
 		if (siteHeader) {
 			siteHeader.classList.remove(...Object.values(sectionModifierClasses).map((className) => `site-header--${className}`));
 			if (sectionModifierClass) siteHeader.classList.add(`site-header--${sectionModifierClass}`);
+		}
+		if (siteSocial) {
+			siteSocial.classList.remove(...Object.values(sectionModifierClasses).map((className) => `site-social--${className}`));
+			if (sectionModifierClass) siteSocial.classList.add(`site-social--${sectionModifierClass}`);
 		}
 		const activeSection = document.getElementById(sectionId);
 		const cubeColor = activeSection ? getComputedStyle(activeSection).getPropertyValue('--cube-section-color').trim() : '';

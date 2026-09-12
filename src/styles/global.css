@@ -89,11 +89,57 @@ a {
   text-transform: uppercase;
   color: var(--hero-title-color);
   view-transition-name: site-brand;
-  transition: font-size 180ms ease;
+  transition: font-size 180ms ease, color 180ms ease;
 }
 
 .site-header.is-stuck .brand {
   font-size: 24px;
+}
+
+.site-social {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  pointer-events: none;
+  view-transition-name: site-social;
+}
+
+.hero .site-social:not(.is-stuck) {
+  padding-top: 16px;
+  position: relative;
+  bottom: unset;
+  left: unset;
+}
+
+.site-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  text-decoration: none;
+  color: var(--hero-title-color);
+  transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
+}
+
+.site-social-link:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+
+.site-social-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.site-social-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .site-role {
@@ -264,7 +310,11 @@ a {
 .site-header--section-ai-pdlc .brand,
 .site-header--section-product-design .brand,
 .site-header--section-data .brand,
-.site-header--section-branding .brand {
+.site-header--section-branding .brand,
+.site-social--section-ai-pdlc .site-social-link,
+.site-social--section-product-design .site-social-link,
+.site-social--section-data .site-social-link,
+.site-social--section-branding .site-social-link {
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -3122,6 +3172,22 @@ a {
   margin-top: 14px;
 }
 
+.case-study-body ul,
+.case-study-full-width ul,
+.grid-col-text ul {
+  max-width: 820px;
+  margin: 16px 0 20px 24px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--hero-subtitle-color);
+}
+
+.case-study-body li,
+.case-study-full-width li,
+.grid-col-text li {
+  margin-bottom: 8px;
+}
+
 .case-study-meta {
   display: grid;
   align-content: start;
@@ -3612,6 +3678,8 @@ hr,
 
   .site-header,
   .site-role,
+  .site-social,
+  .site-social.is-stuck,
   .home-page .site-header,
   .home-page .site-role,
   .home-page .site-header.is-stuck {
@@ -3620,6 +3688,15 @@ hr,
 
   .site-header {
     top: 16px;
+  }
+
+  .site-social.is-stuck {
+    bottom: 16px;
+  }
+
+  .site-social-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .site-role {

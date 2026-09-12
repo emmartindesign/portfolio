@@ -10,7 +10,213 @@
   <title>Automated sector reports | Eric Michael Martin</title>
 </head>
 <body class="case-study-page">
-  <main class="case-study-main"><div class="case-study-hero"><a class="case-study-back case-study-back-top" href="../">&larr; Back</a><h1 class="display">Automated sector reports</h1><h2>Turning up the volume of information design output through automation.</h2></div><div class="case-study-body"><dl class="case-study-meta"><div><dt>Roles</dt><dd>Lead designer, design technologist</dd></div><div><dt>Tools</dt><dd>PowerPoint, Looker, Python</dd></div><div><dt>Team</dt><dd>1 data engineer, 1 designer/UX engineer</dd></div><div><dt>Timeline</dt><dd>May 2022 - January 2023</dd></div></dl><article><h3>Overview</h3><p>CB Insights needed a way to increase information-design output without losing the distinctive, hand-crafted feel of its reports.</p><h4>Goal</h4><p>Automate the path from structured data to editable, branded PowerPoint reports while keeping charts clear, consistent, and ready for human review.</p><h4>Design the reports</h4><p>The visual system balanced CB Insights’ digital-nostalgic colors and accent elements with clear table styles, editable charts, and guidelines for labels, axes, and dense time-series data.</p><h4>Structure the data</h4><p>I worked with a data scientist to define the report structure and wrote the first Python automation to turn prepared data into repeatable report content.</p><h4>Export and refine</h4><p>The export process generated PowerPoint pages and applied styles for colors, font sizes, and layout. Label-placement logic adjusted positions and sizes to avoid overlap while preserving readability.</p><blockquote class="case-study-quote">Automation made more output possible without making the work feel automated.</blockquote></article></div><a class="case-study-back" href="../">&larr; Back to the portfolio</a></main>
+  <main class="case-study-main">
+    <div class="case-study-hero">
+      <a class="case-study-back case-study-back-top" href="../">&larr; Back</a>
+      <h1 class="display">Automated sector reports</h1>
+      <h2>Turning up the volume of information design output through automation.</h2>
+    </div>
+
+    <!-- Top Section: 2 columns (Roles/Meta on Left, Stacked Overview & Goal on Right) -->
+    <div class="case-study-body">
+      <dl class="case-study-meta">
+        <div><dt>Role</dt><dd>Lead Designer, Design Technologist</dd></div>
+        <div><dt>Tools</dt><dd>PowerPoint, Looker, Python, HTML, CSS, XML</dd></div>
+        <div><dt>Team</dt><dd>1 data engineer, 1 designer/UX engineer</dd></div>
+        <div><dt>Timeline</dt><dd>May 2022 &ndash; January 2023</dd></div>
+      </dl>
+
+      <article>
+        <h3>Overview</h3>
+        <p><a target="_blank" rel="noopener noreferrer" href="https://www.cbinsights.com/">CB Insights</a> is a market intelligence platform with a distinct visual style. To solidify the perception of authority, they frequently share PowerPoint reports and data visualizations on LinkedIn. They wanted to vastly increase the number of reports they released.</p>
+
+        <h4>Goal</h4>
+        <p>CB Insights asked me to join their team in 2022 to take the number of reports they released from around 4 per year to 30+ by completely eliminating the most tedious and error-prone parts of the process: chart building and data transfer.</p>
+      </article>
+    </div>
+
+    <!-- Full-Width Subsequent Sections -->
+    <div class="case-study-full-width">
+      <!-- Hero Feature GIF: Automated Report Generation in Action -->
+      <section class="grid-media-full">
+        <img loading="lazy" src="../assets/case-studies/images/data-visualization/NgMRzPip4gnMUJAf.gif" alt="Automated sector report generation in PowerPoint" width="728" height="410">
+        <p class="media-caption">Automated report generation in action &ndash; transforming raw data queries into styled, editable PowerPoint decks.</p>
+      </section>
+
+      <hr>
+
+      <!-- 1. Section 1: Design the Reports -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>Design the reports</h3>
+          <p>The design approach was the first step of the process, where I pored over every previous report the teams had created manually to find obvious patterns. I also had specific design guidelines to follow:</p>
+          <ul>
+            <li>CB Insights' distinctive digital-nostalgic colors and accent elements (new at the time)</li>
+            <li>Unique data visualization guidelines for label placement, etc.</li>
+            <li>A desire to keep the appearance as close to hand-crafted as possible</li>
+            <li>Specific table styles which rarely wrap</li>
+            <li>Alignment with digital app designs</li>
+            <li>Charts needed to be editable after export</li>
+          </ul>
+          <p>All of these needed to be translated into PowerPoint's XML files and automated via Python.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/data-visualization/rlPo1YYCjfm3HOBo.png" alt="CB Insights digital-nostalgia brand aesthetic from cbinsights.com" width="1906" height="840">
+          <p class="media-caption">An example of CB Insights' digital-nostalgia style from <a target="_blank" rel="noopener noreferrer" href="https://www.cbinsights.com/">cbinsights.com</a>.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 2. UI Exploration Carousel (10 Report Slide Designs) -->
+      <section class="case-study-carousel case-study-carousel--feature" aria-label="Automated sector report slide designs and layouts" data-interval="5000">
+        <div class="carousel-viewport">
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/6CWyOHLmpJhWhOIa.png" alt="Fintech funding trends overview slide">
+            <p class="carousel-slide-caption">Report design &ndash; Funding trends and volume overview</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/pZMbdFdlRBTYogSS.png" alt="Valuation multiples and deal size distribution">
+            <p class="carousel-slide-caption">Report design &ndash; Valuation multiples and deal share</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/Ps3jq9ue0ifVIa3U.png" alt="Quarterly venture investment by region">
+            <p class="carousel-slide-caption">Report design &ndash; Quarterly venture investment by region</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/XxgiwOeQ0oi1eaeM.png" alt="Unicorn birth rates and sector distribution">
+            <p class="carousel-slide-caption">Report design &ndash; Unicorn birth rates and sector distribution</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/WGayDjDHk5xLc0xi.png" alt="Global exit activity: M&A vs IPOs">
+            <p class="carousel-slide-caption">Report design &ndash; Global exit activity: M&amp;A vs IPOs</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/sdsQBSAoN76tfBxR.png" alt="Top investors by stage and deal count">
+            <p class="carousel-slide-caption">Report design &ndash; Top investors by stage and deal count</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/GiMgKunSTJ8vWkmp.png" alt="Market map and sector breakdown table">
+            <p class="carousel-slide-caption">Report design &ndash; Market map and sector overview table</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/ZMgm7DWLAPqIwF6h.png" alt="Median late-stage round valuations">
+            <p class="carousel-slide-caption">Report design &ndash; Median late-stage round valuations</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/7jXzKkLQx73FcKoK.png" alt="Early-stage deal volume time series">
+            <p class="carousel-slide-caption">Report design &ndash; Early-stage deal volume time series</p>
+          </div>
+          <div class="carousel-slide slide-image-gallery">
+            <img loading="lazy" src="../assets/case-studies/images/data-visualization/FsR93HSbNh5iSUio.png" alt="Key takeaways and executive summary slide">
+            <p class="carousel-slide-caption">Report design &ndash; Key takeaways and executive summary</p>
+          </div>
+        </div>
+        <div class="carousel-dots" role="tablist" aria-label="Slide design thumbnails"></div>
+      </section>
+
+      <p class="media-caption" style="text-align: center; margin: -56px auto 64px; max-width: 680px;">
+        The data visualization design needed to work well across hundreds of pages, be reproducible, and be extremely legible. Unicorn illustration by <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/caroline-mcclain-59345b107/">Caroline McClain</a> of CB Insights.
+      </p>
+
+      <hr>
+
+      <!-- 3. Section 2: Structure the Data -->
+      <section class="case-study-grid grid-reversed">
+        <div class="grid-col-text">
+          <h3>Structure the data</h3>
+          <p>I worked with a data scientist who ported cuts of the CB Insights database into Looker, an analytics platform. There, she and I worked to get the cuts into very simple formats which would work with PowerPoint's simple charting. The most complex charts used no more than two sets of axis labels for each axis. We determined an overall, reproducible structure, section-by-section, page-by-page which could be iterated over. Each report, regardless of content, would have the same overall structure.</p>
+          <p>Using Python, I wrote the first piece of the final software, which would use Looker's API to convert these cuts into Python Pandas data tables. From there, they could be manipulated into various shapes required by the data. Python Pandas allows simple data analysis and manipulation, necessary for converting it into PowerPoint formats.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/data-visualization/pEj5PdJ2SIwTHpK3.png" alt="Complex bar and line combo charts with multiple axis values" width="2796" height="1544">
+          <p class="media-caption">The most complex charts were bar/line combos with different axis values.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 4. Section 3: Export the Reports -->
+      <section class="case-study-grid">
+        <div class="grid-col-text">
+          <h3>Export the reports</h3>
+          <p>Once I had the data structured, I was able to use <a target="_blank" rel="noopener noreferrer" href="https://python-pptx.readthedocs.io/en/latest/">Python-pptx</a> and the <a target="_blank" rel="noopener noreferrer" href="https://docs.python.org/3/library/xml.etree.elementtree.html">ElementTree XML API</a> to convert the Pandas data frames into PowerPoint pages and apply simple styles like colors, font-sizes etc.</p>
+          <p>The first reports run had 80% of the styles applied, which already saved a huge amount of work for our teams, but there were still many manual processes to go.</p>
+        </div>
+        <div class="grid-col-media">
+          <img loading="lazy" src="../assets/case-studies/images/data-visualization/ilMuswa4abBWLVor.png" alt="Automated PowerPoint report slide export layout" width="2667" height="1500">
+          <p class="media-caption">Automated report generation in PowerPoint with custom fonts, colors, and layout templates applied.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 5. Technical Refinements (Gallery & Cards) -->
+      <div style="margin: 0 0 28px;">
+        <h3>Technical refinements</h3>
+        <p>Turning basic automation into production-quality reports required solving nuanced graphical layout challenges inside PowerPoint's rendering engine.</p>
+      </div>
+
+      <section class="grid-gallery-3col">
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/data-visualization/tazyMegKIp8wrNLV.png" alt="Label placement collision avoidance in charts" width="2667" height="1500">
+          <p><strong>Collision avoidance:</strong> Dynamic leader-lines and smart nudging prevent label overlaps.</p>
+        </div>
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/data-visualization/1YFkGc0SQe1BECjM.png" alt="Vertical value-axis calculation and contrast adaptation" width="2667" height="1500">
+          <p><strong>Vertical axes:</strong> Custom plot space calculation and contrast-aware color shifts.</p>
+        </div>
+        <div class="gallery-card">
+          <img loading="lazy" src="../assets/case-studies/images/data-visualization/W9H0tNmfWrF8z4OQ.png" alt="Horizontal time series axes and quarter layout XML" width="2667" height="1500">
+          <p><strong>Horizontal axes:</strong> Custom XML automation for quarters, YTD groupings, and time series.</p>
+        </div>
+      </section>
+
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Label placement</h4>
+          <p>Labels took a large amount of refinement, as there were many complex charts with a lot of data. They could not overlap. To make this happen, I reverse-engineered how chart layouts worked in PowerPoint, and built a label-tracking system which calculated label size, determined position, and compared coordinates to detect collision.</p>
+          <p style="margin-top: 10px;">If a label overlapped, it was nudged out of the overlap zone, and a leader-line applied if it was over a specific amount.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Vertical axes</h4>
+          <p>Because placement of objects is calculated based on how much space exists in the plot, I reverse-engineered how value-axes are calculated in PowerPoint and modified the system to have a more visually-consistent output by providing allowances for labels.</p>
+          <p style="margin-top: 10px;">This calculation also allowed for me to track if a label fell on top of a white background or colored bar and change its color value accordingly.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Horizontal axes</h4>
+          <p>Most charts were time series, and many of them depicted quarters. Our team wanted these to be displayed as seen above. To achieve that, I created the display manually, then pulled apart the XML where those settings were saved and automated the creation of matching custom XML for these charts.</p>
+          <p style="margin-top: 10px;">The primary challenge here was getting the style right for the YTD, since the number of quarters wasn't consistent run-to-run.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 6. Impact Callout Quote -->
+      <blockquote class="case-study-quote">
+        CB Insights more than <em>quadrupled</em> their report output due to this project. They were also able to create reports for sub-sectors and trending markets&mdash;something very costly to do before. Analysts and designers went from building 200+ pages per report to copying and editing 10.
+      </blockquote>
+
+      <hr>
+
+      <!-- 7. Learnings & Next Steps Cards -->
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Learnings</h4>
+          <p>While I had experience automating in PowerPoint before this project, I learned a huge amount about how math and digital design are deeply intertwined, and how human touches can be replicated by deep pattern recognition and replication.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Ideas for next steps</h4>
+          <p>Before departing the project, I had begun to explore the possibility of data analysis to automate the large portion of the executive summary. The executive summary was still very manual, as it required a lot of human input about the content and styles.</p>
+          <p style="margin-top: 10px;">I believed analyzing the charts analysts chose would reveal patterns which could be used to automatically select candidates for the executive summary and style them correctly&mdash;leaving humans the much easier job of removing the pages that weren't appropriate.</p>
+        </div>
+      </section>
+
+      <hr>
+    </div>
+
+    <a class="case-study-back" href="../">&larr; Back to the portfolio</a>
+  </main>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
