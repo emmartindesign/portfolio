@@ -3,13 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dedicated Clinical Scheduler: A purpose-built, virtualized grid replacing third-party calendar bloat by Eric Michael Martin.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <title>A Leading EMR Software Provider Scheduler | Eric Michael Martin</title>
+  <title>Clinical Scheduler | Eric Michael Martin</title>
 </head>
 <body class="case-study-page">
-  <main class="case-study-main"><div class="case-study-hero"><a class="case-study-back case-study-back-top" href="../">&larr; Back</a><h1 class="display">Scheduler</h1><h2>A best-in-class scheduling experience built around real workflows.</h2></div><div class="case-study-body"><dl class="case-study-meta"><div><dt>Roles</dt><dd>Interaction design, prototyping</dd></div><div><dt>Tools</dt><dd>Figma, prototypes</dd></div><div><dt>Team</dt><dd>A leading EMR Software Provider product team</dd></div><div><dt>Timeline</dt><dd>Placeholder timeline</dd></div></dl><article><h3>Overview</h3><p>Placeholder text</p><h4>Goal</h4><p>Placeholder text</p><h4>Section title 1</h4><p>Placeholder text</p><h4>Section title 2</h4><p>Placeholder text</p><h4>Section title 3</h4><p>Placeholder text</p><blockquote class="case-study-quote">Quote Placeholder</blockquote></article></div><a class="case-study-back" href="../">&larr; Back to the portfolio</a></main>
+  <main class="case-study-main">
+    <div class="case-study-hero">
+      <a class="case-study-back case-study-back-top" href="../">&larr; Back</a>
+      <h1 class="display">Clinical scheduler</h1>
+      <h2>Replacing third-party calendar components with a purpose-built, virtualized clinical grid.</h2>
+    </div>
+
+    <!-- Top Section: 2 columns (Roles/Meta on Left, Stacked Overview & Goal on Right) -->
+    <div class="case-study-body">
+      <dl class="case-study-meta">
+        <div><dt>Roles</dt><dd>Principal Interaction Designer, UI Engineer</dd></div>
+        <div><dt>Tools</dt><dd>Figma, TypeScript, Virtualized 2D Grid, Design Systems</dd></div>
+        <div><dt>Team</dt><dd>Clinical UX, Product Management, Front-End Engineering</dd></div>
+        <div><dt>Timeline</dt><dd>Design, Prototyping &amp; Beta Implementation</dd></div>
+      </dl>
+
+      <article>
+        <h3>Overview</h3>
+        <p>Our clinical scheduling grid originally ran on Syncfusion&rsquo;s <code>ScheduleComponent</code>&mdash;a generic, license-gated third-party calendar widget. While suitable for basic calendaring, multi-provider outpatient healthcare environments require dense, high-frequency grids capable of handling hundreds of rapid daily adjustments without UI lag or operational friction.</p>
+
+        <h4>Goal</h4>
+        <p>We set out to build an in-house, purpose-built scheduling utility designed specifically for clinical velocity. By creating a lightweight, 2D-virtualized grid with native direct manipulation, bespoke clinical visual status language, and built-in support for AI-assisted scheduling workflows, we replaced vendor constraints with a faster, fully owned experience.</p>
+      </article>
+    </div>
+
+    <!-- Full-Width Subsequent Sections -->
+    <div class="case-study-full-width">
+      <!-- --- Component Comparison Table ------------------------------------- -->
+      <section class="case-study-section-header">
+        <h3>Architecture: Third-Party vs. Purpose-Built</h3>
+        <p>Replacing a general-purpose vendor component with an owned solution shifted our focus from generic calendar features to high-density clinical efficiency.</p>
+      </section>
+
+      <div class="case-study-table-container">
+        <table class="case-study-table">
+          <thead>
+            <tr>
+              <th>Dimension</th>
+              <th>Syncfusion ScheduleComponent</th>
+              <th>Our In-House Clinical Grid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td>Licensed third-party widget</td>
+              <td>Built in-house, purpose-fit for clinical work</td>
+            </tr>
+            <tr>
+              <td>Design Goal</td>
+              <td>General-purpose consumer calendar</td>
+              <td>High-density multi-provider clinical scheduling</td>
+            </tr>
+            <tr>
+              <td>Rendering Model</td>
+              <td>Renders entire DOM tree</td>
+              <td>2D virtualized&mdash;only visible cells render</td>
+            </tr>
+            <tr>
+              <td>Bundle Footprint</td>
+              <td>Large multi-megabyte vendor suite</td>
+              <td>Lean ~70 KB focused utility bundle</td>
+            </tr>
+            <tr>
+              <td>Licensing Cost</td>
+              <td>Recurring annual per-developer seat fees</td>
+              <td>Zero ongoing licensing overhead</td>
+            </tr>
+            <tr>
+              <td>Customization</td>
+              <td>Bounded by vendor API surface</td>
+              <td>Unbounded&mdash;100% owned source and interaction model</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr>
+
+      <!-- --- Direct Manipulation Interactions ------------------------------- -->
+      <section class="case-study-section-header">
+        <h3>Direct Manipulation That Feels Native</h3>
+        <p>Clinical coordinators manage hundreds of moving appointments each day. The interaction model prioritizes immediate tactile feedback and muscle memory over modal dialogs.</p>
+      </section>
+
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Drag to Reschedule</h4>
+          <p>Snaps live to configurable grid increments with real-time visual boundaries. Unauthorized slots display a locked cursor (<code>not-allowed</code>), preventing failed drops and silent rejections.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Continuous Drag to Resize</h4>
+          <p>Displays updated appointment durations in real time as the edge handle moves, with an active state style so staff always distinguish tentative adjustments from committed bookings.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Resource Column Reordering</h4>
+          <p>Direct drag-and-drop column sorting for provider and room headers&mdash;a vital operational workflow that generic calendar libraries fail to support out of the box.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Desktop Muscle Memory</h4>
+          <p>Standard keyboard clipboard support (<code>Ctrl/Cmd + C/X/V</code>) and context menus, matching the desktop operating system habits staff rely on every day.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- --- Visual Language ----------------------------------------------- -->
+      <section class="case-study-section-header">
+        <h3>A Visual Language That Reduces Cognitive Load</h3>
+        <p>In high-stress clinic environments, visual clarity prevents scheduling errors. We replaced free-form styling with an explicit visual system.</p>
+      </section>
+
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>7 Clinical Event Types</h4>
+          <p>Automated, consistent color coding for initial evaluations, treatments, and discharges, eliminating per-event styling ambiguity across the application.</p>
+        </div>
+        <div class="grid-card">
+          <h4>10 Interaction States</h4>
+          <p>Distinct styling across hover, selected, suggested, proposed, read-only, past, and preview states, enabling immediate assessment of an appointment's status at a glance.</p>
+        </div>
+        <div class="grid-card">
+          <h4>8 Status Micro-Indicators</h4>
+          <p>Compact badges for copays, check-in, check-out, and no-shows display directly on appointment blocks and expand with full context on hover without cluttering the grid.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Automated Strikethrough</h4>
+          <p>Cancelled appointments strike through immediately, eliminating the need to click into separate verification screens to confirm status.</p>
+        </div>
+      </section>
+
+      <!-- Design Principle Callout Quote -->
+      <blockquote class="case-study-quote">Performance is an accessibility requirement. A scheduler that drops frames while scrolling isn&rsquo;t just slow&mdash;it&rsquo;s unusable for clinical staff working under high-pressure time constraints.</blockquote>
+
+      <!-- --- AI-Assisted Workflows ------------------------------------------ -->
+      <section class="case-study-section-header">
+        <h3>Built for AI-Assisted and Semi-Automated Workflows</h3>
+        <p>Modern clinical workflows increasingly pair human coordinators with automated scheduling assistants. We engineered the grid to make human-in-the-loop review seamless.</p>
+      </section>
+
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Granular Interaction Locking</h4>
+          <p>Fine-grained permissions dynamically lock unaffected slots during automated schedule generation and review flows, preventing accidental edits with zero boilerplate UI code.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Clear AI Recommendation States</h4>
+          <p>Distinct visual treatments (animated subtle gradients vs. dashed outlines) clearly distinguish AI-suggested appointments from human-confirmed commitments so suggestions are never mistaken for finalized bookings.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Context-Aware Keyboard Navigation</h4>
+          <p>Keyboard focus automatically leaps across occupied appointments directly to the next available open slot rather than stepping through empty 15-minute increments, saving hundreds of repetitive keystrokes each shift.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Non-Disruptive Background Updates</h4>
+          <p>An overlay loading mode preserves the active viewport and scroll position during background data refetches, ending the classic frustration of losing your place when new schedule data arrives.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- --- Business & Engineering Impact ---------------------------------- -->
+      <section class="case-study-section-header">
+        <h3>Business &amp; Engineering Impact</h3>
+        <p>By taking ownership of the scheduling layer, our product and engineering teams unlocked significant operational and financial benefits.</p>
+      </section>
+
+      <section class="grid-row-cards">
+        <div class="grid-card">
+          <h4>Zero Recurring Licensing</h4>
+          <p>Eliminated recurring per-seat developer licensing fees, permanently removing third-party cost escalation as the engineering organization grows.</p>
+        </div>
+        <div class="grid-card">
+          <h4>90%+ Leaner Bundle</h4>
+          <p>Replaced a bloated general-purpose vendor suite with an in-house ~70 KB utility focused strictly on healthcare operations, dramatically accelerating initial page load.</p>
+        </div>
+        <div class="grid-card">
+          <h4>Unbounded Extensibility</h4>
+          <p>Complex healthcare requirements&mdash;such as custom clinical badges, AI-review locking, and specialized hover cards&mdash;can be developed and deployed immediately without waiting on vendor roadmap approvals.</p>
+        </div>
+        <div class="grid-card">
+          <h4>60fps Responsive Virtualization</h4>
+          <p>Custom 2D viewport virtualization renders only visible grid cells, maintaining buttery 60fps responsiveness across dense schedules spanning dozens of provider columns.</p>
+        </div>
+      </section>
+
+      <!-- Bottom Navigation / Back Button -->
+      <a class="case-study-back" href="../">&larr; Back to the portfolio</a>
+    </div>
+  </main>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

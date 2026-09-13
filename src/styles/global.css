@@ -88,12 +88,49 @@ a {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--hero-title-color);
-  view-transition-name: site-brand;
   transition: font-size 180ms ease, color 180ms ease;
 }
 
 .site-header.is-stuck .brand {
   font-size: 24px;
+}
+
+.brand-name {
+  display: inline-block;
+}
+
+.brand-first {
+  view-transition-name: brand-first;
+}
+
+.brand-middle {
+  view-transition-name: brand-middle;
+}
+
+.brand-last {
+  view-transition-name: brand-last;
+}
+
+::view-transition-group(brand-first),
+::view-transition-group(brand-middle),
+::view-transition-group(brand-last) {
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::view-transition-old(brand-first),
+::view-transition-old(brand-middle),
+::view-transition-old(brand-last) {
+  display: none;
+}
+
+::view-transition-new(brand-first),
+::view-transition-new(brand-middle),
+::view-transition-new(brand-last) {
+  animation: none;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .site-social {
@@ -104,15 +141,36 @@ a {
   display: flex;
   align-items: center;
   gap: 16px;
+  width: fit-content;
+  max-width: max-content;
+  margin: 0;
+  padding: 0;
   pointer-events: none;
   view-transition-name: site-social;
 }
 
 .hero .site-social:not(.is-stuck) {
-  padding-top: 16px;
   position: relative;
   bottom: unset;
   left: unset;
+  margin-top: 16px;
+  padding: 0;
+  width: fit-content;
+  max-width: max-content;
+  align-self: flex-start;
+}
+
+/* Prevent view transition snapshot scaling/ballooning */
+::view-transition-group(site-social) {
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::view-transition-old(site-social),
+::view-transition-new(site-social) {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .site-social-link {
@@ -3390,6 +3448,49 @@ hr,
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 6px;
   background: #ffffff;
+}
+
+/* 3b. Comparison / Data Tables */
+.case-study-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 48px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.case-study-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.case-study-table th,
+.case-study-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.case-study-table th {
+  font-family: var(--font-display);
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(0, 0, 0, 0.03);
+  font-weight: 500;
+}
+
+.case-study-table tr:last-child td {
+  border-bottom: none;
+}
+
+.case-study-table td:first-child {
+  font-weight: 600;
+  color: var(--hero-title-color);
 }
 
 /* 4. Native HTML5 <dialog> Image Zoom / Lightbox */
